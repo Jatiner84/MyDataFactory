@@ -1,0 +1,9 @@
+{
+	"name": "AZDB-jatin-datafactory",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8db7a794-cf59-4e8e-bcad-9fcbdec32736",
+		"tenantId": "36c14271-fa49-4d41-9f61-9993c298c10e"
+	}
+}
