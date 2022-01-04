@@ -1,0 +1,51 @@
+{
+	"name": "EmployDetail",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azdbjatinstorageaccount_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Employdetail.xlsx",
+				"folderPath": "FIleSource",
+				"fileSystem": "datafactoryfiles"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "EmployId",
+				"type": "String"
+			},
+			{
+				"name": "FirstName",
+				"type": "String"
+			},
+			{
+				"name": "LastName",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "Emalid",
+				"type": "String"
+			},
+			{
+				"name": "Handphone",
+				"type": "String"
+			}
+		]
+	}
+}

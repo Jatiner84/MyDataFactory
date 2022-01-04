@@ -1,0 +1,35 @@
+{
+	"name": "EmployProject",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azdbjatinstorageaccount_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "EmployProject.xlsx",
+				"folderPath": "FIleSource",
+				"fileSystem": "datafactoryfiles"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "EmployId",
+				"type": "String"
+			},
+			{
+				"name": "ProjectId",
+				"type": "String"
+			},
+			{
+				"name": "Assigned",
+				"type": "String"
+			}
+		]
+	}
+}
