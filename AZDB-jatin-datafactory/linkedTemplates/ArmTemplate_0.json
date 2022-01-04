@@ -173,7 +173,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DelimitedText1')]",
+			"name": "[concat(parameters('factoryName'), '/EmployProjectDetail')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -189,7 +189,7 @@
 						"folderPath": "FileProduce",
 						"fileSystem": "datafactoryfiles"
 					},
-					"columnDelimiter": ",",
+					"columnDelimiter": "|",
 					"escapeChar": "\\",
 					"firstRowAsHeader": true,
 					"quoteChar": "\""
@@ -226,7 +226,7 @@
 					"sinks": [
 						{
 							"dataset": {
-								"referenceName": "DelimitedText1",
+								"referenceName": "EmployProjectDetail",
 								"type": "DatasetReference"
 							},
 							"name": "sink1"
@@ -246,7 +246,7 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/EmployDetail')]",
 				"[concat(variables('factoryId'), '/datasets/EmployProject')]",
-				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]"
+				"[concat(variables('factoryId'), '/datasets/EmployProjectDetail')]"
 			]
 		},
 		{
