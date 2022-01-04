@@ -13,7 +13,7 @@
 				"folderPath": "FileProduce",
 				"fileSystem": "datafactoryfiles"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "|",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
