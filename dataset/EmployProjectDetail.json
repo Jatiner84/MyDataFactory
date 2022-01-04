@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "EmployProjectDetail",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "azdbjatinstorageaccount_linkedservice",
